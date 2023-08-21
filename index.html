@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CALCULATOR</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 class="text-center">Welcome to calculate me!!!</h1>
+  <div class="container flex flex-column mx-auto">
+    <div class="row">
+     <input id="display" class="input" readonly>
+    </div>
+    <div class="row">
+      <button onclick="clearDisplay()" class="button special">AC</button>
+      <button onclick="deleteLastChar()" class="button special">Delete</button>
+      <button onclick="appendValue('%')" class="button special">%</button>
+    </div>
+    <div class="row">
+      <button onclick="appendValue('7')" class="button">7</button>
+      <button onclick="appendValue('8')" class="button">8</button>
+      <button onclick="appendValue('9')" class="button">9</button>
+      <button onclick="appendValue('*')" class="button">*</button>
+    </div>
+    <div class="row">
+      <button onclick="appendValue('4')" class="button">4</button>
+      <button onclick="appendValue('5')" class="button">5</button>
+      <button onclick="appendValue('6')" class="button">6</button>
+      <button onclick="appendValue('/')" class="button">/</button>
+    </div>
+    <div class="row">
+      <button onclick="appendValue('1')" class="button">1</button>
+      <button onclick="appendValue('2')" class="button">2</button>
+      <button onclick="appendValue('3')" class="button">3</button>
+      <button onclick="appendValue('+')" class="button">+</button>
+    </div>
+    <div class="row">
+      <button onclick="appendValue('0')" class="button">0</button>
+      <button onclick="appendValue('.')" class="button btw">.</button>
+      <button onclick="calculate()" class="button">=</button>
+      <button onclick="appendValue('-')" class="button btw">-</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+  <!-- <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
+</body>
+
+</html>
